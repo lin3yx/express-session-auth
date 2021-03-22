@@ -1,0 +1,17 @@
+{
+  "name": "express-es6",
+  "version": "1.0.0",
+  "description": "express.js server with ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lambert Lin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
