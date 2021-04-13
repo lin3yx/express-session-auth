@@ -1,0 +1,16 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "database": {
+    "uri": "mongodb://localhost:27017",
+    "dbName": "tutorial_db"
+  },
+  "session": {
+    "secret": "mySecret",
+    "key": "connect.sid",
+    "cookie": {
+      "maxAge": 604800000
+    }
+  }
+}

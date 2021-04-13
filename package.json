@@ -1,17 +1,31 @@
 {
-  "name": "express-es6",
+  "name": "express-session-auth",
   "version": "1.0.0",
-  "description": "express.js server with ES6",
-  "main": "index.js",
+  "description": "Session based authentication using express.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node app.js",
+    "dev": "nodemon --exec babel-node app.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "author": "Lambert Lin",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "@babel/core": "^7.13.15",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }
