@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon --exec babel-node app.js",
-    "dev": "nodemon --exec babel-node app.js",
+    "dev": "export NODE_ENV=development && nodemon --exec babel-node app.js",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.6",
+    "connect-mongo": "^4.4.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.12.3"

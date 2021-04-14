@@ -11,6 +11,7 @@
     "key": "connect.sid",
     "cookie": {
       "maxAge": 604800000
-    }
+    },
+    "ttl": 1209600
   }
 }
