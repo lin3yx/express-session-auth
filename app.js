@@ -2,7 +2,7 @@ import express from "express";
 import session from "express-session";
 import config from "config";
 import mongoose from "mongoose";
-import MongoStore from "connect-mongo"
+import MongoStore from "connect-mongo";
 
 const app = express();
 const PORT = config.get("app.port");
@@ -48,7 +48,7 @@ app.use(
       client: connection.getClient(),
       dbName: config.get("database.dbName"),
       collectionName: "sessions",
-    })
+    }),
   })
 );
 
@@ -57,7 +57,7 @@ app.get("/", (req, res) => {
   console.log(req.session);
   console.log(req.session.id);
   res.send("Hello World");
-}); 
+});
 
 // Listening on port 3000 by default
 app.listen(PORT, console.log(`Server is listening on PORT ${PORT}`));
